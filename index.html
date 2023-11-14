@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor De Moedas</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div id="mensagem-container">
+      <h1>Conversor de moedas</h1>
+
+      <select id="moeda-origem">
+        <option value="">Origem</option>
+        <option value="eur">Euro</option>
+        <option value="usd">Dólar Americano</option>
+        <option value="gbp">libran Esterlina</option>
+        <option value="jpy">Iene Japonês</option>
+        <option value="chf">Franco Suíço</option>
+        <option value="cad">Dólar Canadense</option>
+        <option value="aud">Dólar Australiano</option>
+        <option value="cny">Yuan Chinês</option>
+        <option value="brl">Real Brasileiro</option>
+      </select>
+
+      <select id="moeda-destino">
+      <option value="">Destino</option>
+      <option value="eur">Euro</option>
+      <option value="usd">Dólar Americano</option>
+      <option value="gbp">Libra Esterlina</option>
+      <option value="jpy">Iene Japonês</option>
+      <option value="chf">Franco Suíço</option>
+      <option value="cad">Dólar Canadense</option>
+      <option value="aud">Dólar Australiano</option>
+      <option value="cny">Yuan Chinês</option>
+      <option value="brl">Real Brasileiro</option>
+      </select>
+
+      <input type="number" id="valor-a-converter" placeholder="valor a ser convertido">
+
+      <button type="button" onclick="converterMoeda()">Converter</button>
+
+      <div id="resultado-container"></div>
+
+    </div>
+  
+ <script src="./src/index.js"></script>
+</body>
+</html>
